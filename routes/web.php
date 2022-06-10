@@ -17,3 +17,7 @@ Route::get('/', function () {
 Route::post('/contato/inserir','ContatoController@store');
 Route::get('/contato','ContatoController@index');
 Route::get('/contato-view{id}','ContatoController@destroy');
+
+Route::get('/home', function () {
+    return view('home');
+});
